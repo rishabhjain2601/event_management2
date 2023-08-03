@@ -1,0 +1,233 @@
+body {
+  background-color: #0F0F0F;
+}
+
+.eventpage {
+  background-color: #0F0F0F;
+  color: white;
+  border-radius: 20px;
+  /* height: 1400px; */
+  width: 70vw;
+  margin-left: 15vw;
+  /* display: flex; */
+  /* gap: 10px; */
+  /* grid-template-columns: auto auto auto auto auto; */
+}
+
+.image {
+  height: 500px;
+  width: 100%;
+  border-radius: 20px;
+  /* grid-area: 1/1/5/6; */
+  background-color: #1E1B1B;
+}
+
+img{
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.register {
+  padding-left: 2%;
+  padding-top: 0.1%;
+  height: 200px;
+  width: 98%;
+  /* padding: 5px; */
+  border-radius: 20px;
+  /* grid-area: 5/1/7/6; */
+  background-color: #1E1B1B;
+}
+
+.c1 {
+  display: flex;
+}
+
+.organizer {
+  height: 250px;
+  width: 23%;
+  border-radius: 20px;
+  /* grid-area: 7/1/9/2; */
+  background-color: #1E1B1B;
+  /* padding-left: 20px; */
+  padding-top: 1%;
+}
+
+.about {
+  height: 200px;
+  width: 50%;
+  margin-left: 2%;
+  margin-right: 2%;
+  border-radius: 20px;
+  /* grid-area: 7/2/9/5; */
+  background-color: #1E1B1B;
+  padding-left: 2%;
+  padding-right: 1%;
+  padding-top: 18px;
+}
+
+.deadline {
+  height: 300px;
+  width: 23%;
+  border-radius: 20px;
+  /* grid-area: 7/5/10/5; */
+  background-color: #1E1B1B;
+  margin-bottom: 20px;
+  padding-top: 2%;
+  padding-left: 1%;
+}
+
+.graytext {
+  color: rgba(255, 255, 255, 0.6);
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+  font-size: 18px;
+  font-weight: 380;
+  font-style: normal;
+}
+
+.register h1 {
+  margin-bottom: 0px;
+}
+
+.right {
+  float: right;
+  margin-right: 30px;
+  margin-top: 35px;
+  display: flex;
+  word-spacing: 2px;
+}
+
+.rupee {
+  background: -webkit-linear-gradient(54deg, #f54109 50%, #f5d00b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-right: 5px;
+}
+
+.register a {
+  float: right;
+  margin-right: 30px;
+  margin-top: 30px;
+  padding: 10px 20px 10px 20px;
+  background-image: linear-gradient(54deg, #f54109 50%, #f5d00b 100%);
+  color: white;
+  border-radius: 7.26px 7.264px 7.264px 7.26px;
+  border: solid white 1.5px;
+  font-weight: 600;
+  font-stretch: ultra-expanded;
+  text-decoration: none;
+}
+
+.register a:hover{
+  background-image: linear-gradient(54deg, #f54009b3 50%, #f5d20b93 100%);
+  cursor: pointer;
+  
+}
+
+.register hr {
+  border: 1px solid gray;
+  float: left;
+  width: 97%;
+}
+
+.datevenue {
+  display: flex;
+  float: left;
+  margin-top: 10px;
+}
+
+.startdate {
+  margin-right: 4rem;
+}
+
+.enddate {
+  margin-right: 4rem;
+}
+
+.venueicon {
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+
+.venuetext {
+  margin-left: 0.8rem;
+  margin-top: 1rem;
+}
+
+.logo{
+  width: 7rem;
+  height: auto;
+  margin-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.title{
+  margin-left: 12px;
+  font-size: large;
+}
+
+.title2{
+  font-size: large;
+}
+
+.media{
+  height: 2rem;
+  margin-left: auto;
+  display: flex;
+  padding: 4% 15% 0px 15%;
+}
+
+.media a{
+  height: 100%;
+  width: auto;
+  margin-top: 12px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.media img{
+  border-radius: 0px;
+}
+
+.media img:hover{
+  cursor: pointer;
+}
+
+.deadline img{
+  height: 100%;
+  width: auto;
+  border-radius: 0px;
+  margin-top: 10px;
+}
+
+.clock img{
+  width: 23%;
+  height: auto;
+  margin-left: 0px;
+}
+
+.clock{
+  display: flex;
+}
+
+.container{
+  display: flex;
+}
+
+.container img{
+  width: 20%;
+  height: auto;
+  padding: 2px;
+  margin-left: 0px;
+  border-radius: 6.531px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.details{
+  margin-top: 15px;
+  margin-left: 12px;
+  width: 50%;
+}
