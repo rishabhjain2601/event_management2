@@ -1,10 +1,11 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './event_page.css'
 import data from '../data/events.json'
 
 
 
 function Event_page(props){
+  const [aboutIsExpanded, setAboutIsExpanded] = useState(false);
   return (
     <div>
       {/* Navbar */}
@@ -23,7 +24,7 @@ function Event_page(props){
           </svg> </div> {data.at(props).fee} </div>
           <h1>{data.at(props).event_name}</h1>
           <div className="graytext">{data.at(props).organizer} | {data.at(props).mode} </div>
-          <hr />
+          <hr className='hr1'/>
           <div className="datevenue">
             <div className="startdate"><div>Start Date</div>
               <div className="graytext">{data.at(props).start}</div>
@@ -51,7 +52,10 @@ function Event_page(props){
               <a href={data.at(props).linkedin}><img src="insta.svg" alt="" /></a>
             </div>
           </div>
-          <div className="about"><div className='title2'>About </div><div className="graytext">{data.at(props).about}</div></div>
+          {/* <div className="about"><div className='title2'>About </div><div className="graytext">{data.at(props).about}</div></div> */}
+
+          <div className='about'><div className='title2'>About </div><div className="graytext"> {aboutIsExpanded? data.at(props).about : data.at(props).about?.substring(0,450)}<span className={`text-yellow-400 cursor-pointer ${data.at(props).about?.length < 451? 'hidden' :  ''}`} onClick={()=>{setAboutIsExpanded((aboutIsExpanded)=>!aboutIsExpanded)}}>{aboutIsExpanded? ' ...less' : ' more...'}</span></div></div>
+
           <div className="deadline">
             <div className="clock"><img src="clock.svg" alt="" />
               <div className="details">
@@ -79,6 +83,7 @@ function Event_page(props){
           </div>
         </div>
       </div>
+
     </div>
   )
 }
